@@ -12,14 +12,14 @@ public class TentarCapturar {
     }
 
     public static void metodo1(){
-        System.out.println("Método 1 start");
+        System.out.println("Metodo1 start");
         metodo2();
-        System.out.println("Método 1 end");
+        System.out.println("Metodo1 end");
 
     }
 
     public static void metodo2() {
-        System.out.println("Método 2 start");
+        System.out.println("Metodo2 start");
         Scanner sc = new Scanner(System.in);
 
         try {
@@ -28,8 +28,8 @@ public class TentarCapturar {
             System.out.println(vect[position]);
         }
         catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Posição inválida!");
-            e.printStackTrace();
+            System.out.println("Posicao invalida!");
+//            e.printStackTrace();
             sc.next();
         }
         catch (InputMismatchException e){
@@ -37,6 +37,6 @@ public class TentarCapturar {
         }
 
         sc.close();
-        System.out.println("Método 2 end");
+        System.out.println("Metodo2 end");
     }
 }
